@@ -14,14 +14,15 @@ function add() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
     const calcDescription = `${currentResult} + ${enteredNumber}`;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
+    
     createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
 function subtract () {
     const enteredNumber = getUserNumberInput();
     const calcDescription = `${currentResult} - ${enteredNumber}`;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     outputResult(currentResult, calcDescription);
 }
 
@@ -29,14 +30,14 @@ function subtract () {
 function multiply () {
     const enteredNumber = getUserNumberInput();
     const calcDescription = `${currentResult} * ${enteredNumber}`;
-    currentResult = currentResult * enteredNumber;
+    currentResult *= enteredNumber;
     outputResult(currentResult, calcDescription);
 }
 
 function divide () {
     const enteredNumber = getUserNumberInput();
     const calcDescription = `${currentResult} / ${enteredNumber}`;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     outputResult(currentResult, calcDescription);
 }
 
